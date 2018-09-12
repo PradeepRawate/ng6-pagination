@@ -1,0 +1,18 @@
+<ng-container *ngIf="pager.pages && pager.pages.length">
+    <div class="pagination-container">
+        <div *ngIf="showInfo" class="paginate-caption text-muted">
+            <span>Displaying {{pager.startIndex + 1}} - {{pager.endIndex + 1}} of {{allItems.length}}</span>
+        </div>
+        <ul class="pagination">
+            <li class="" [ngClass]="{disabled:pager.currentPage === 1}" (click)="setPage(pager.currentPage - 1)">Previous</li>
+            <li class="" [ngClass]="{active:pager.currentPage === 1}" (click)="setPage(1)">1</li>
+            <li *ngIf="pager.startPage !== 1" (click)="getMorePages('PREV')">...</li>
+            <li class="" *ngFor="let page of pager.pages" [ngClass]="{active:pager.currentPage === page}" (click)="setPage(page)">
+                {{page}}
+            </li>
+            <li *ngIf="pager.endPage !== pager.totalPages" (click)="getMorePages('NEXT')">...</li>
+            <li class="" [ngClass]="{active:pager.currentPage === pager.totalPages}" (click)="setPage(pager.totalPages)">{{pager.totalPages}}</li>
+            <li class="" [ngClass]="{disabled:pager.currentPage === pager.totalPages}" (click)="setPage(pager.currentPage + 1)">Next</li>
+        </ul>
+    </div>
+</ng-container>

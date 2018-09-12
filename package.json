@@ -1,0 +1,20 @@
+{
+  "name": "ng6-pagination",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || 6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || 6.0.0"
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "angular6",
+    "pagination"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PradeepRawate/ng6-pagination"
+  },
+  "author": "Pradeep Rawate <pradeeprawate@gmail.com>",
+  "license": "MIT"
+}
