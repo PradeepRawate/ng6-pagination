@@ -4,7 +4,7 @@ Simple Pagination for Angular with Informative track of results as you switch be
 
 ## Demo
 
-Check out the live demo here: https://github.com/michaelbromley/ngx-pagination/blob/master/README.md
+Check out the live demo here: https://pradeeprawate.github.io/ng6-pagination
 
 ## Quick Start
 
